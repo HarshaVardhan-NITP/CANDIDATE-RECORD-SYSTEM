@@ -1,0 +1,41 @@
+* Record is the main class.
+
+* Initialize an object rec for class Record.
+
+
+* You have to choose any of the listed 5 actions :
+	1)ADD RECORD
+	2)LISTS THE RECORD
+	3)MODIFY THE RECORD
+	4)DELETE THE RECORD
+	5)EXIT
+
+
+* In that class setdata function is used to adding records in the binary file named EMPLOYEE.DAT 
+which was written in case 1.
+
+
+* In case 2 we List all the records in file stored for that we used ios::out(which is file opened in output mode).
+
+
+* In case 3 we modify the existed records in file. By creating a vector named data. We will store all the lines in file in form of string in data vector,
+in which we will be checking if the given string to modify is substring of any of line in file. If we find the string is substring of a line. We will be storing 
+modified string in place of original which was 's' string in code. Then we will be opening file in ios::trunc mode which makes all the previous data delete 
+from EMPLOYEE.DAT file and then rewritten by strings stored in data vector to file "EMPLOYEE.DAT".
+
+
+* In case 4 we delete the existing record in file. It will also follow same logic storing all lines in form of string in data1 vector but not storing the one
+we want to delete and again opening the file in ios::trunc mode all the data in file would be erased. then rewritten by the strings stored in data1 vector to the
+lines of file.
+
+
+* Case 5 is to exit out of the loop.
+
+
+* We should have to close the file after every action executed.
+
+
+*****This is my small project. If any queries you may comment*****
+
+
+ 
